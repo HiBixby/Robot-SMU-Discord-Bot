@@ -169,8 +169,7 @@ async def on_message(message):
         if agree == 1:
             # 지메일 아이디,비번 입력하기
             email_user = 'mcsmu20@gmail.com'      #<ID> 본인 계정 아이디 입력
-            access_pw = os.environ["MAIL_PW"]
-            email_password = access_pw      #<PASSWORD> 본인 계정 암호 입력
+            email_password = os.environ["MAIL_PW"]      #<PASSWORD> 본인 계정 암호 입력
             email_send =str(msg1.content)+'@sangmyung.kr'         # <받는곳주소> 수신자 이메일 abc@abc.com 형태로 입력
         
             # 제목 입력
