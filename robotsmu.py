@@ -37,7 +37,7 @@ def discordtxt(discordID):
         discordlist = f.readlines()
         for i in discordlist:
             if i == str(discordID)+"\n":
-                print("당신의 디스코드 계정은 이미 연동되어 있습니다.무슨 짓을 하셨길래 이 메세지가 뜬거죠? 당신의 디스코드 아이디는 이미 인증되어 있습니다.(1:1문의 필요) 에러코드:1000")
+                print("이미 연동된 디스코드 계정입니다.(1:1문의 필요) 에러코드:1000")
                 return 0
     with open("data/discord.txt", 'a', encoding = 'UTF-8') as f:
         f.write(str(discordID)+"\n")
